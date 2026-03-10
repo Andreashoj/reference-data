@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: reference-data
-          image: reference-data:latest
+          image: andreashoj/reference-data:latest
           ports:
             - containerPort: 8080
           env:
