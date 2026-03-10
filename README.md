@@ -25,3 +25,4 @@ docker-compose up --build
 - Push Docker image to registry and deploy to OpenShift via GitHub Actions
 - Swap H2 for production database (PostgreSQL/Oracle)
 - Expand test coverage
+- Actual deployment and hosting
