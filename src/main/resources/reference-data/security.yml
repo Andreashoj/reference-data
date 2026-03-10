@@ -1,0 +1,26 @@
+info:
+  name: security
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8080/api/securities
+  body:
+    type: json
+    data: |-
+      {
+          "isin": "US0231351067",
+          "ticker": "AMZN",
+          "name": "Amazon.com Inc.",
+          "currency": "USD",
+          "exchange": "NASDAQ",
+          "type": "stock"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

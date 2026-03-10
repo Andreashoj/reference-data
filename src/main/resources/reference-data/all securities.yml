@@ -1,0 +1,25 @@
+info:
+  name: all securities
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/api/securities?search=Apple Inc.&exchange=NASDAQ&currency=USD
+  params:
+    - name: search
+      value: Apple Inc.
+      type: query
+    - name: exchange
+      value: NASDAQ
+      type: query
+    - name: currency
+      value: USD
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
