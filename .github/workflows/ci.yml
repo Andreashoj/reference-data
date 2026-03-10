@@ -35,4 +35,4 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build -t andreashoej/reference-data:latest .
-          docker push andreashoj/reference-data:latest
+          docker push andreashoej/reference-data:latest
